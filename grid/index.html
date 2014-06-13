@@ -333,13 +333,13 @@
                                            '# } else { #' +
                                                "cocktail" +
                                            '# } #' +
-                                        '">#= data.value #</div>' +
+                                        '">#= data.value #</div><div class="superscript" style="position: relative; top: -45px; right:-2em; font-size: 80%;">2</div>' +
                                      '# } else {#' +
                                         '<div class="' +
                                            '# if (1) { #' +
                                                "gensel" +
                                            '# } #' +
-                                        '">#= data.value #</div>' +
+                                        '">#= data.value #</div><div class="" style="position: relative; top: -45px; right:-2em; font-size: 80%;"></div>' +
                                      '# } #'
                         },
                         footer: false
@@ -437,7 +437,19 @@
                         border-radius: 50%;
                         border-color:rgba(1, 114, 170, 0.48);
                         line-height: 40px;
+                        border: 3px solid rgba(1, 114, 170, 0.48);
                 }
+                .superscript {
+                        width: 18px;
+                        height: 18px;
+                        margin: auto;
+                        -webkit-border-radius: 50px;
+                        -moz-border-radius: 50px;
+                        border-radius: 50%;
+                        border-color:rgba(1, 114, 170, 0.48);
+                        line-height: 20px;
+                        border: 3px solid rgba(1, 114, 170, 0.48);
+                }                
                 /*.exhibition {
                     background-color: #fff;
                     color: #000;
